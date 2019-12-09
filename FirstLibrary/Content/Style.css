@@ -7,6 +7,9 @@
     font-family: myFont2;
     src: url('font/TanseekModernProArabic1.eot')
 }
+body {
+    padding-top:100px;
+}
 .navbar-default {
     background-color: #e9a61c;
     border-color: #909491;
