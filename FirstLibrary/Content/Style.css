@@ -9,6 +9,7 @@
 }
 body {
     padding-top:100px;
+    padding-bottom:50px;
 }
 .navbar-default {
     background-color: #e9a61c;
@@ -31,12 +32,12 @@ body {
     height: 75px;
     padding-top: 10px;
 }
-.myfooter{
-    background-color:crimson;
-    padding-top:10px;
-    font-family:myFont;
-    text-align:justify;
-
+.myfooter {
+    background-color: crimson;
+    padding-top: 10px;
+    font-family: myFont;
+    text-align: justify;
+  
 }
     .myfooter a,p{
         color: azure;
