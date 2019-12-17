@@ -7,24 +7,25 @@
     font-family: myFont2;
     src: url('font/TanseekModernProArabic1.eot')
 }
+
 body {
-    padding-top:100px;
-    padding-bottom:50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
+
 .navbar-default {
     background-color: #e9a61c;
     border-color: #909491;
-    
 }
+
     .navbar-default .navbar-nav > li > a {
         color: #f6f3f3;
         font-family: myFont;
+    }
 
-    }
-    .navbar-default .navbar-nav > li > a:hover {
-        color: #f6f3f3;
-            
-    }
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #f6f3f3;
+        }
 
 .nav > li {
     position: relative;
@@ -32,32 +33,36 @@ body {
     height: 75px;
     padding-top: 10px;
 }
+
 .myfooter {
     background-color: crimson;
     padding-top: 10px;
     font-family: myFont;
     text-align: justify;
-  
+   
+    width:100%;
+    position:absolute;
 }
-    .myfooter a,p{
+
+    .myfooter a, p {
         color: azure;
     }
 
-    .myfooter h3,ul,p{
-        margin-bottom:20px;
-        font-family:myFont2;
-        list-style-type:none;
+    .myfooter h3, ul, p {
+        
+        font-family: myFont2;
+        list-style-type: none;
     }
+
 .subfooter {
-    background-color:brown;
-    color:white;
+    background-color: brown;
+    color: white;
     padding: 10px;
-    text-align:center;
-
+    text-align: center;
 }
-.logo-size{
-    width:70px;
-    height:35px;
 
-
+.logo-size {
+    width: 70px;
+    height: 35px;
+    margin-top: -7px;
 }

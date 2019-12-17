@@ -280,13 +280,29 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912102049379_InitialCreate.cs" />
+    <Compile Include="Migrations\201912102049379_InitialCreate.designer.cs">
+      <DependentUpon>201912102049379_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912162246551_addColomn.cs" />
+    <Compile Include="Migrations\201912162246551_addColomn.designer.cs">
+      <DependentUpon>201912162246551_addColomn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912170026169_AddCategoryTable.cs" />
+    <Compile Include="Migrations\201912170026169_AddCategoryTable.designer.cs">
+      <DependentUpon>201912170026169_AddCategoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Books.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -354,6 +370,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Login.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -363,6 +384,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912102049379_InitialCreate.resx">
+      <DependentUpon>201912102049379_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912162246551_addColomn.resx">
+      <DependentUpon>201912162246551_addColomn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912170026169_AddCategoryTable.resx">
+      <DependentUpon>201912170026169_AddCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

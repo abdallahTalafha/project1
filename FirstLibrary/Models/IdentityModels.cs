@@ -31,5 +31,7 @@ namespace WebApplication1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FirstLibrary.Models.Category> Categories { get; set; }
     }
 }
