@@ -267,8 +267,6 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\1234.jpg" />
-    <Content Include="images\LibLogo12.jpg" />
-    <Content Include="images\logo2.png" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Web.config" />
@@ -280,6 +278,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -298,6 +297,10 @@
     <Compile Include="Migrations\201912170026169_AddCategoryTable.cs" />
     <Compile Include="Migrations\201912170026169_AddCategoryTable.designer.cs">
       <DependentUpon>201912170026169_AddCategoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912171354478_AddBooksTable.cs" />
+    <Compile Include="Migrations\201912171354478_AddBooksTable.designer.cs">
+      <DependentUpon>201912171354478_AddBooksTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -375,6 +378,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Books\Create.cshtml" />
+    <Content Include="Views\Books\Delete.cshtml" />
+    <Content Include="Views\Books\Details.cshtml" />
+    <Content Include="Views\Books\Edit.cshtml" />
+    <Content Include="Views\Books\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -394,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912170026169_AddCategoryTable.resx">
       <DependentUpon>201912170026169_AddCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912171354478_AddBooksTable.resx">
+      <DependentUpon>201912171354478_AddBooksTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

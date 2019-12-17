@@ -16,5 +16,9 @@ namespace FirstLibrary.Models
         [Required]
         [Display(Name ="وصف التصنيف")]
         public string CategoryDescription { get; set; }
+
+        public ICollection<Books>book{ get; set; }
+
+
     }
 }

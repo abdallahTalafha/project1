@@ -11,12 +11,21 @@ namespace FirstLibrary.Models
         public int Id { get; set; }
         [DisplayName("اسم الكتاب")]
         public string BookTitle { get; set; }
+
+
         [DisplayName("وصف الكتاب")]
-
         public string BookContent { get; set; }
-        [DisplayName("صورة الغلاف")]
 
+
+        [DisplayName("صورة الغلاف")]
         public string BookImage { get; set; }
+
+
+        [DisplayName("تصنيف الكتاب")]
+        public int CategoryId { get; set; }
+
+        public Category Category { get; set; }
+
 
     }
 }

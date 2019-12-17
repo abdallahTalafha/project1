@@ -179,3 +179,4 @@ C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\F
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.csproj.GenerateResource.cache
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addColomn.resources
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.AddCategoryTable.resources
+C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.AddBooksTable.resources
