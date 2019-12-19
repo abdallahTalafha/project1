@@ -39,7 +39,9 @@
             @Html.DisplayFor(modelItem => item.BookContent)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.BookImage)
+            <img src="~/Bimgs/@Html.DisplayFor(model => item.BookImage)" 
+                 class="thumbnail" 
+                 style="width:48px;height:68px" />
         </td>
         <td>
             @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |

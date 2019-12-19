@@ -302,6 +302,18 @@
     <Compile Include="Migrations\201912171354478_AddBooksTable.designer.cs">
       <DependentUpon>201912171354478_AddBooksTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912191648475_addPdfbooks.cs" />
+    <Compile Include="Migrations\201912191648475_addPdfbooks.designer.cs">
+      <DependentUpon>201912191648475_addPdfbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912191652544_addPdfbooks2.cs" />
+    <Compile Include="Migrations\201912191652544_addPdfbooks2.designer.cs">
+      <DependentUpon>201912191652544_addPdfbooks2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912191803596_addPdfbooks3.cs" />
+    <Compile Include="Migrations\201912191803596_addPdfbooks3.designer.cs">
+      <DependentUpon>201912191803596_addPdfbooks3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Books.cs" />
@@ -392,6 +404,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Bimgs\" />
+    <Folder Include="BPDF\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912102049379_InitialCreate.resx">
@@ -405,6 +419,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912171354478_AddBooksTable.resx">
       <DependentUpon>201912171354478_AddBooksTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912191648475_addPdfbooks.resx">
+      <DependentUpon>201912191648475_addPdfbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912191652544_addPdfbooks2.resx">
+      <DependentUpon>201912191652544_addPdfbooks2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912191803596_addPdfbooks3.resx">
+      <DependentUpon>201912191803596_addPdfbooks3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

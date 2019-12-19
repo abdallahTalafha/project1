@@ -20,11 +20,14 @@ namespace FirstLibrary.Models
         [DisplayName("صورة الغلاف")]
         public string BookImage { get; set; }
 
+        [DisplayName("ملف الكتاب ")]
+        public string EBook { get; set; }
+
 
         [DisplayName("تصنيف الكتاب")]
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
 
 
     }

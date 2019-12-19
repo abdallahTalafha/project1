@@ -180,3 +180,6 @@ C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\F
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addColomn.resources
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.AddCategoryTable.resources
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.AddBooksTable.resources
+C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addPdfbooks.resources
+C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addPdfbooks2.resources
+C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addPdfbooks3.resources

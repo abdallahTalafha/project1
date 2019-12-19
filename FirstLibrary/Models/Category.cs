@@ -17,7 +17,7 @@ namespace FirstLibrary.Models
         [Display(Name ="وصف التصنيف")]
         public string CategoryDescription { get; set; }
 
-        public ICollection<Books>book{ get; set; }
+        public virtual ICollection<Books>book{ get; set; }
 
 
     }

@@ -39,9 +39,11 @@ body {
     padding-top: 10px;
     font-family: myFont;
     text-align: justify;
-   
-    width:100%;
-    position:absolute;
+    height: 209px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
     .myfooter a, p {
@@ -59,6 +61,9 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
+    height:40px;
+    
+
 }
 
 .logo-size {

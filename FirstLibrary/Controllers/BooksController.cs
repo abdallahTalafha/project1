@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using FirstLibrary.Models;
 using WebApplication1.Models;
+using System.IO;
 
 namespace FirstLibrary.Controllers
 {
@@ -49,10 +50,18 @@ namespace FirstLibrary.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,BookTitle,BookContent,BookImage,CategoryId")] Books books)
+        public ActionResult Create(Books books,HttpPostedFileBase Bimg,HttpPostedFileBase Ebook)
         {
             if (ModelState.IsValid)
             {
+                string ImgPath = Path.Combine(Server.MapPath("~/Bimgs"), Bimg.FileName);
+                //save on server
+                Bimg.SaveAs(ImgPath);
+                //path on database
+                books.BookImage = Bimg.FileName;
+                string EBookPath = Path.Combine(Server.MapPath("~/BPDF"), Ebook.FileName);
+                Ebook.SaveAs(EBookPath);
+                books.EBook = Ebook.FileName;
                 db.Books.Add(books);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -83,10 +92,18 @@ namespace FirstLibrary.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,BookTitle,BookContent,BookImage,CategoryId")] Books books)
+        public ActionResult Edit(Books books, HttpPostedFileBase Bimg, HttpPostedFileBase Ebook)
         {
             if (ModelState.IsValid)
             {
+                string ImgPath = Path.Combine(Server.MapPath("~/Bimgs"), Bimg.FileName);
+                //save on server
+                Bimg.SaveAs(ImgPath);
+                //path on database
+                books.BookImage = Bimg.FileName;
+                string EBookPath = Path.Combine(Server.MapPath("~/BPDF"), Ebook.FileName);
+                Ebook.SaveAs(EBookPath);
+                books.EBook = Ebook.FileName;
                 db.Entry(books).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

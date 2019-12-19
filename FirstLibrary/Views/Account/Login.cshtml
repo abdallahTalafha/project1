@@ -43,15 +43,17 @@
                 </div>
                 <p>
                     @Html.ActionLink("التسجيل كمستخدم جديد ؟", "Register")
-                <br/>
-                        @Html.ActionLink("هل نسيت كلمة السر ؟", "ForgotPassword")
-                    </p>
-            }
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
-</div>
+                </p>
+                @*
+                            <br/>
+                                    @Html.ActionLink("هل نسيت كلمة السر ؟", "ForgotPassword")
+                                </p>*@
+                        }
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section id="socialLoginForm">
+                        @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                    </section>
+                </div>
+            </div>
