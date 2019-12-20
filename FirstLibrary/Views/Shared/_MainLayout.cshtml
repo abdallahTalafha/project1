@@ -4,38 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial scale=1" />
     <title>مكتبة الهجرة</title>
-
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/Style.css" rel="stylesheet" />
+
+    <link href="~/Content/swiper.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+
 </head>
 <body>
-    <!--NavBar-->
+    <!--Navbar-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <button class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">
-                    <img src="~/images/1234.jpg" class="logo-size" />
+                <a href="~/Home" class="navbar-brand">
+                    <img src="~/images/1111.png" class="logo-size" />
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">
+                        <a href="~/Home">
                             <i class="glyphicon glyphicon-home"></i>
                             الرئيسية
                         </a>
                     </li>
+
+
+
                     <li>
-                        <a href="~/Views/Categories/Index.cshtml">
+                        <a href="~/Categories/Index">
                             <i class="glyphicon glyphicon-book"></i>
                             تصنيفات الكتب
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-tags"></i>
@@ -43,80 +50,116 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="~/Home/Contact">
                             <i class="glyphicon glyphicon-heart-empty"></i>
                             اتصل بنا
                         </a>
                     </li>
+
+
+                    <li>
+                        @using (Html.BeginForm("Search", "Home", FormMethod.Post))
+                        {
+                            <input type="text" name="searchName" id="searchName"
+                                   placeholder="ابحث هنا.." />
+                        }
+
+
+                    </li>
                 </ul>
 
-                <!--partal login-->
+
+                <!--Partial Login-->
                 @Html.Partial("_Login")
+
             </div>
+
         </div>
     </nav>
+
     <div class="container">
-        <div class="row" >
+        <div class="row" style="min-height:550px;">
 
             @RenderBody()
 
         </div>
     </div>
-    
-            <!--Footer-->
-            <footer class="myfooter">
-                <div class="container">
-                    <div class="raw">
-                        <div class="col-md-4">
 
-                            <h3>
-                                <i class="glyphicon glyphicon-question-sign"></i>
-                                من نحن ؟
-                            </h3>
-                            <p>
-                                بسم الله الرحمن الرحيم,
-                                شارك في اكبر عمل خيري مختص في تجميع الكتب الاسلامية بجميع اقسامها,تراجع الطلب على الكتب الورقية ادى الى
-                                انخفاض عدد المطابع.
-                                نحاول في هذا المشروع جمع اكبر عدد من الكتب القيمة التي اوشكت على الاندثار.
-                                يمكنك تصوير الكتب و المصنفات التي ترغب بالمشاركة بها ورفعها على بصيغة رقمية تمكن
-                                طلاب العلم من الاستفادة منها.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>
-                                <i class="glyphicon glyphicon-globe"></i>
-                                روابط ذات صلة
-                            </h3>
-                            <ul>
-                                <li><a href="#"> العقيدة</a></li>
-                                <li><a href="#">التفاسير</a></li>
-                                <li><a href="#"> علوم القران</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>
-                                <i class="glyphicon glyphicon-envelope"></i>
-                                تواصل معنا
-                            </h3>
-                            <ul>
-                                <li><a href="#">صفحتنا على الفيسبوك</a></li>
-                                <li><a href="#">تابعنا على التويتر</a></li>
-                                <li><a href="#"> شاهدنا على اليوتيوب</a></li>
-                                <li><a href="#"> اترك لنا رسالة</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
+    <!--Footer-->
+    <footer class="myfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                        من نحن؟
+                    </h3>
+                    <p>
+                        بسم الله الرحمن الرحيم,
+                        شارك في اكبر عمل خيري مختص في تجميع الكتب الاسلامية بجميع اقسامها,تراجع الطلب على الكتب الورقية ادى الى
+                        انخفاض عدد المطابع.
+                        نحاول في هذا المشروع جمع اكبر عدد من الكتب القيمة التي اوشكت على الاندثار.
+                        يمكنك تصوير الكتب و المصنفات التي ترغب بالمشاركة بها ورفعها على الموقع بصيغة رقمية تمكن
+                        طلاب العلم من الاستفادة منها.
+                    </p>
                 </div>
-                <div class="subfooter">
-                    <span>
-                        جميع الحقوق محفوظة © لموقع مكتبة الهجرة 2019
 
-                    </span>
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-globe"></i>
+                        روابط هامة
+                    </h3>
+                    <ul>
+                        <li><a href="#"> العقيدة</a></li>
+                        <li><a href="#">التفاسير</a></li>
+                        <li><a href="#"> علوم القران</a></li>
+                    </ul>
                 </div>
-            </footer>
 
-            <script src="~/Scripts/jquery.js"></script>
-            <script src="~/Scripts/bootstrap.min.js"></script>
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        تواصل معنا
+                    </h3>
+                    <ul>
+                        <li><a href="#">صفحتنا على الفيسبوك</a></li>
+                        <li><a href="#">تابعنا على تويتر</a></li>
+                        <li><a href="#">شاهدنا على اليوتيوب</a></li>
+                        <li><a href="#">اترك لنا رسالة</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="subfooter">
+            <span>جميع الحقوق محفوظة © لموقع مكتبة الهجرة 2019</span>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

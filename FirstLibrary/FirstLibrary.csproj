@@ -264,11 +264,14 @@
     <Content Include="Content\font\glyphicons-halflings-regular.svg" />
     <Content Include="Content\font\index.html" />
     <Content Include="Content\Style.css" />
+    <Content Include="Content\swiper.min.css" />
+    <Content Include="Content\swiper.min.js" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="images\1234.jpg" />
+    <Content Include="images\1111.png" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\swiper.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
