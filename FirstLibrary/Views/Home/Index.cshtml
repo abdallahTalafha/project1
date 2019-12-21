@@ -16,26 +16,27 @@
     <h5>@Html.DisplayFor(modelItem => item.CategoryDescription)</h5>
     <div class="row">
         @*من 18 الى اللوب و بعد اللوب تسكيرتهم*@
-        <div class="col-md-3 thumbnail">
+        <div class="col-md-3">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="imgBx">
-                            @foreach (var subItem in item.book)
-                            {
 
+                    @foreach (var subItem in item.book)
+                    {
+
+                        <div class="swiper-slide">
+                            <div class="imgBx">
 
                                 <img src="~/Bimgs/@subItem.BookImage" />
                                 <h3>@Html.DisplayFor(modelItem => subItem.BookTitle)</h3>
                                 <h2>@Html.DisplayFor(modelItem => subItem.BookContent)</h2>
                                 <button class="btn btn-default" style="margin-bottom:0px;">التفاصيل</button>
-
-
-                            }
+                            </div>
                         </div>
-                    </div>
+
+                    }
+
                 </div>
-            </div>
+                </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
