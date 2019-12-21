@@ -12,6 +12,7 @@ using System.IO;
 
 namespace FirstLibrary.Controllers
 {
+    [Authorize]
     public class BooksController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

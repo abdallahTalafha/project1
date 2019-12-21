@@ -9,6 +9,7 @@ using WebApplication1.Models;
 
 namespace FirstLibrary.Controllers
 {
+    [Authorize(Roles = "Admins")]
     public class RolesController : Controller
     {
          ApplicationDbContext db = new ApplicationDbContext();

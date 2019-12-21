@@ -12,7 +12,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize]
+    
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -76,7 +76,7 @@ namespace WebApplication1.Controllers
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            var result = await SignInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -137,7 +137,7 @@ namespace WebApplication1.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+       
         public ActionResult Register() {
 
             ViewBag.UserType = new SelectList(db.Roles.Where(a => !a.Name.Contains("Administrator")).ToList(), "Name", "Name");
@@ -156,7 +156,6 @@ namespace WebApplication1.Controllers
             if (ModelState.IsValid)
             {
                 ViewBag.UserType = new SelectList(db.Roles.Where(a=>!a.Name.Contains("Administrator")).ToList(), "Name", "Name");
-
                 var user = new ApplicationUser { UserName = model.UserName, Email = model.Email,UserType=model.UserType };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

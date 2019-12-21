@@ -184,3 +184,4 @@ C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\F
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.addPdfbooks3.resources
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.InitialCreate.resources
 C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.Test.resources
+C:\Users\3babShogun\Desktop\New folder (3)\FirstLibrary\FirstLibrary\obj\Debug\FirstLibrary.Migrations.last.resources

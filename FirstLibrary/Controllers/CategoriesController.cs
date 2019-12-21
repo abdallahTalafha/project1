@@ -11,17 +11,20 @@ using WebApplication1.Models;
 
 namespace FirstLibrary.Controllers
 {
+    [Authorize(Roles ="Admins")]
     public class CategoriesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Categories
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(db.Categories.ToList());
         }
 
         // GET: Categories/Details/5
+
         public ActionResult Details(int? id)
         {
             if (id == null)

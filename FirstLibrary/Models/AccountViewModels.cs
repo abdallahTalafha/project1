@@ -49,9 +49,9 @@ namespace WebApplication1.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "البريد الالكتروني")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "اسم المستخدم ")]
+        
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

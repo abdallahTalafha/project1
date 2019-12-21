@@ -322,6 +322,10 @@
     <Compile Include="Migrations\201912211557273_Test.designer.cs">
       <DependentUpon>201912211557273_Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912212231411_last.cs" />
+    <Compile Include="Migrations\201912212231411_last.designer.cs">
+      <DependentUpon>201912212231411_last.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Books.cs" />
@@ -409,6 +413,7 @@
     <Content Include="Views\Roles\Details.cshtml" />
     <Content Include="Views\Roles\Edit.cshtml" />
     <Content Include="Views\Roles\Delete.cshtml" />
+    <Content Include="Views\Home\search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -445,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912211557273_Test.resx">
       <DependentUpon>201912211557273_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912212231411_last.resx">
+      <DependentUpon>201912212231411_last.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

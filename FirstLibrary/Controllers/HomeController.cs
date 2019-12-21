@@ -30,5 +30,17 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+        public ActionResult search()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult search(string searchName)
+        {
+            var result = db.Books.Where(a => a.BookTitle.Contains(searchName)
+            || a.Category.CategoryName.Contains(searchName)).ToList();
+            return View();
+        }
     }
 }
