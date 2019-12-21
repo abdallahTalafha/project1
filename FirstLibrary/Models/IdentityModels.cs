@@ -35,5 +35,7 @@ namespace WebApplication1.Models
         public System.Data.Entity.DbSet<FirstLibrary.Models.Category> Categories { get; set; }
 
         public System.Data.Entity.DbSet<FirstLibrary.Models.Books> Books { get; set; }
+
+        public System.Data.Entity.DbSet<FirstLibrary.Models.RoleViewModel> RoleViewModels { get; set; }
     }
 }

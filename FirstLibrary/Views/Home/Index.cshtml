@@ -25,11 +25,9 @@
 
                         <div class="swiper-slide">
                             <div class="imgBx">
-
-                                <img src="~/Bimgs/@subItem.BookImage" />
-                                <h3>@Html.DisplayFor(modelItem => subItem.BookTitle)</h3>
-                                <h2>@Html.DisplayFor(modelItem => subItem.BookContent)</h2>
-                                <button class="btn btn-default" style="margin-bottom:0px;">التفاصيل</button>
+                                <a href="~/BPDF/@subItem.EBook">
+                                    <img src="~/Bimgs/@subItem.BookImage" />
+                                </a>
                             </div>
                         </div>
 
