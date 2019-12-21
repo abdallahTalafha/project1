@@ -7,7 +7,7 @@
         @Html.AntiForgeryToken()
         <ul class="nav navbar-nav navbar-right">
             <li>
-                @Html.ActionLink("مرحبا بك يا:" + User.Identity.GetUserName(), "Index", "Manage")
+                @Html.ActionLink("مرحبا بك يا : " + User.Identity.GetUserName(), "Index", "Manage")
             </li>
             <li>
                 <a href="javascript:document.getElementById('logoff').submit()">تسجيل الخروج</a>
